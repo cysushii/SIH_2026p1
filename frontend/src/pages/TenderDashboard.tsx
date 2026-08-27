@@ -4,7 +4,6 @@ import CriticalAlerts from '../components/tender/CriticalAlerts';
 import RequirementForecast from '../components/tender/RequirementForecast';
 import TenderPriorityMatrix from '../components/tender/TenderPriorityMatrix';
 import PriorityTenders from '../components/tender/PriorityTenders';
-import ProductionImpactSummary from '../components/tender/ProductionImpactSummary';
 import ProcurementRiskMap from '../components/tender/ProcurementRiskMap';
 import QuickActions from '../components/tender/QuickActions';
 
@@ -26,15 +25,12 @@ const TenderDashboard = () => {
         </div>
       </div>
 
-      {/* Second Row: Priority Tenders, Impact, Risk Map */}
+      {/* Second Row: Priority Tenders, Risk Map */}
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
-        <div className="xl:col-span-5 h-[400px]">
+        <div className="xl:col-span-7 h-[400px]">
           <PriorityTenders />
         </div>
-        <div className="xl:col-span-3 h-[400px]">
-          <ProductionImpactSummary />
-        </div>
-        <div className="xl:col-span-4 h-[400px]">
+        <div className="xl:col-span-5 h-[400px]">
           <ProcurementRiskMap />
         </div>
       </div>
